@@ -1,5 +1,5 @@
 {% set name = "datasette" %}
-{% set version = "0.56" %}
+{% set version = "0.57" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datasette-{{ version }}.tar.gz
-  sha256: 66b3988a2f17c8ecff0f3cd593ed60236841af5c804399c25f553584f705acf3
+  sha256: c35642f1c01ad6c167bd7be4a672c788ea0f64c59a025db28a51ad1063b360ea
 
 build:
   entry_points:
@@ -33,6 +33,7 @@ requirements:
     - itsdangerous ~=1.1
     - janus >=0.4,<0.7
     - jinja2 >=2.10.3,<2.12.0
+    - markupsafe
     - mergedeep >=1.1.1,<1.4.0
     - pint ~=0.9
     - pluggy ~=0.13.0
