@@ -1,5 +1,5 @@
 {% set name = "datasette" %}
-{% set version = "0.58.1" %}
+{% set version = "0.59" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datasette-{{ version }}.tar.gz
-  sha256: 6a798cd11d15bfaa9cd25c3ccee8ef4b6a1ad91dda517a1dd9b39bbb6b727896
+  sha256: 819082894459858d63576ea58b02c44ce4cb78dd611cd514fb60297ab2625322
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
   run:
     - aiofiles >=0.4,<0.7
     - asgi-csrf >=0.6
-    - asgiref >=3.2.10,<3.4.0
+    - asgiref >=3.4.0
     - click ~=7.1.1
     - click-default-group ~=1.2.2
     - httpx >=0.17
