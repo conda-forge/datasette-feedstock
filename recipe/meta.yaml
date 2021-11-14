@@ -23,7 +23,7 @@ requirements:
     - pytest-runner
     - python >=3.6
   run:
-    - aiofiles >=0.4,<0.7
+    - aiofiles >=0.4,<0.8
     - asgi-csrf >=0.6
     - asgiref >=3.4.0
     - click ~=7.1.1
