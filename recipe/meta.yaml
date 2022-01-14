@@ -1,5 +1,5 @@
 {% set name = "datasette" %}
-{% set version = "0.59.4" %}
+{% set version = "0.60" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datasette-{{ version }}.tar.gz
-  sha256: 6eea9eab7ad65e0bb0c043ab50daf31c2eb4c13f099809e3432dfc71c69b1dce
+  sha256: 59e325aabd66340b83a5d48ffb37d14223a651ce6d2141810be1fa053b1adbbc
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - pytest-runner
     - python >=3.6
   run:
-    - aiofiles >=0.4,<0.8
+    - aiofiles >=0.4,<0.9
     - asgi-csrf >=0.9
     - asgiref >=3.2.10,<3.5.0
     - click >=7.1.1,<8.1.0
@@ -31,12 +31,12 @@ requirements:
     - httpx >=0.20
     - hupper ~=1.9
     - itsdangerous >=1.1,<3.0
-    - janus <0.7,>=0.6.2
+    - janus >=0.6.2,<1.1
     - jinja2 >=2.10.3,<3.1.0
     - markupsafe
     - mergedeep >=1.1.1,<1.4.0
     - pint ~=0.9
-    - pluggy >=0.13,<1.1
+    - pluggy >=1.0,<1.1
     - python >=3.6
     - python-baseconv ==1.2.2
     - pyyaml >=5.3,<7.0
@@ -46,8 +46,11 @@ test:
   imports:
     - datasette
     - datasette.publish
+    - datasette.utils
+    - datasette.views
   commands:
     - pip check
+    - datasette --help
   requires:
     - pip
 
