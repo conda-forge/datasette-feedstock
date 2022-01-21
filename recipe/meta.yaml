@@ -29,7 +29,7 @@ requirements:
     - click <=8.0.3
     - click-default-group <=1.2.2
     - httpx >=0.20
-    - hupper >=1.9,==1.*
+    - hupper >=1.9
     - itsdangerous >=1.1,<3.0
     - janus >=0.6.2,<1.1
     - jinja2 >=2.10.3,<3.1.0
@@ -40,7 +40,7 @@ requirements:
     - python >=3.6
     - python-baseconv <=1.2.2
     - pyyaml >=5.3,<7.0
-    - uvicorn >=0.11,==0.*
+    - uvicorn >=0.11
 
 test:
   imports:
