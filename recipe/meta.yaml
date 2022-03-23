@@ -1,5 +1,5 @@
 {% set name = "datasette" %}
-{% set version = "0.61" %}
+{% set version = "0.61.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/datasette-{{ version }}.tar.gz
-  sha256: e08cc5945702b5ea7f002aa9d8b92af8e93da766c811108228843c003fb0015f
+  sha256: 060ed8737c5fc6d83e6ab35b84d91f9c0e39e3caf7d794106e39b4bef9b559eb
 
 build:
   entry_points:
