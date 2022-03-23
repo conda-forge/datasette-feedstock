@@ -38,7 +38,7 @@ requirements:
     - pint >=0.9,<1.0
     - pluggy >=1.0,<1.1
     - python >=3.7
-    - python-baseconv <=1.2.2
+    - python-baseconv ==1.2.2
     - pyyaml >=5.3,<7.0
     - uvicorn >=0.11,<1.0
 
