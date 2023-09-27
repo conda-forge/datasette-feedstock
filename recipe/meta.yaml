@@ -13,7 +13,7 @@ source:
 build:
   entry_points:
     - datasette = datasette.cli:cli
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,31 +23,28 @@ requirements:
     - pytest-runner
     - python >=3.7
   run:
-    - aiofiles >=0.4,<0.9
-    - asgi-csrf >=0.9
-    - asgiref >=3.2.10,<3.6.0
-    - click >=7.1.1,<8.1.0
-    - click-default-group-wheel >=1.2.2
-    - httpx >=0.20
-    - hupper ~=1.9
-    - itsdangerous >=1.1,<3.0
-    - janus >=0.6.2,<1.1
-    - jinja2 >=2.10.3,<3.1.0
-    - markupsafe
-    - mergedeep >=1.1.1,<1.4.0
-    - pint ~=0.9
-    - pluggy >=1.0,<1.1
     - python >=3.7
-    - python-baseconv ==1.2.2
-    - pyyaml >=5.3,<7.0
-    - uvicorn ~=0.11
+    - asgiref >=3.2.10
+    - click >=7.1.1
+    - click-default-group-wheel >=1.2.2
+    - jinja2 >=2.10.3
+    - hupper >=1.9
+    - httpx >=0.20
+    - pint >=0.9
+    - pluggy >=1.0
+    - uvicorn >=0.11
+    - aiofiles >=0.4
+    - janus >=0.6.2
+    - asgi-csrf >=0.9
+    - pyyaml >=5.3
+    - mergedeep >=1.1.1
+    - itsdangerous >=1.1
+    - setuptools
+    - pip
 
 test:
   imports:
     - datasette
-    - datasette.publish
-    - datasette.utils
-    - datasette.views
   commands:
     - pip check
     - datasette --help
