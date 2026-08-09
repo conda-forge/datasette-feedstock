@@ -14,13 +14,12 @@ Development: https://github.com/simonw/datasette
 Documentation: https://docs.datasette.io/en/stable/
 
 Datasette is a tool for exploring and publishing data. It helps people take
- data of any shape or size and publish that as an interactive,
- explorable website and accompanying API. Datasette is aimed at data
- journalists, museum curators, archivists, local governments and anyone else
- who has data that they wish to share with the world. It is part of a wider
- ecosystem of tools and plugins dedicated to making working with structured
-  data as productive as possible.
-
+data of any shape or size and publish that as an interactive,
+explorable website and accompanying API. Datasette is aimed at data
+journalists, museum curators, archivists, local governments and anyone else
+who has data that they wish to share with the world. It is part of a wider
+ecosystem of tools and plugins dedicated to making working with structured
+data as productive as possible.
 
 Current build status
 ====================
